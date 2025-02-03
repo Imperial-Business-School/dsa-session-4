@@ -1,21 +1,20 @@
 test = {
-  'name': 'test_ses03_solution_longest_item_2',
+  'name': 'test_ses04_solution_binary_search_count_1',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> x = longest_item('All happy families are alike'.split())
-          >>> isinstance(x, int) # check that result is an integer
-          True
+          >>> binary_search_count([1, 3, 4, 5, 6, 6, 7], 5)
+          (True, 1)
           """,
           'hidden': False
         }
       ],
       'scored': True,
       'setup': r"""
-      >>> from ses03 import *
+      >>> from ses04 import *
       """,
       'teardown': '',
       'type': 'doctest'

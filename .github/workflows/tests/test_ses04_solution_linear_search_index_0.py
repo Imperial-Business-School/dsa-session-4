@@ -1,20 +1,20 @@
 test = {
-  'name': 'test_ses03_solution_broken_factorial_2',
+  'name': 'test_ses04_solution_linear_search_index_0',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> broken_factorial(2)
-          2
+          >>> linear_search_index([1, 3, 9, 4, 5, 6], 6)
+          5
           """,
           'hidden': False
         }
       ],
       'scored': True,
       'setup': r"""
-      >>> from ses03 import *
+      >>> from ses04 import *
       """,
       'teardown': '',
       'type': 'doctest'

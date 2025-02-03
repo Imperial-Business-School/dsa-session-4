@@ -1,20 +1,20 @@
 test = {
-  'name': 'test_ses03_solution_broken_factorial_0',
+  'name': 'test_ses04_solution_binary_search_count_0',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> broken_factorial(0)
-          1
+          >>> binary_search_count([1, 3, 4, 5], -1)
+          (False, 2)
           """,
           'hidden': False
         }
       ],
       'scored': True,
       'setup': r"""
-      >>> from ses03 import *
+      >>> from ses04 import *
       """,
       'teardown': '',
       'type': 'doctest'

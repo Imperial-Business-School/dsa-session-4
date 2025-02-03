@@ -16,32 +16,14 @@ def run_ok_test(test_name):
     # If we didn't find the test
     assert False, f"Could not find score for {test_name}"
 
-def test_broken_factorial_0():
-    run_ok_test("test_ses03_solution_broken_factorial_0")
+def test_binary_search_count_0():
+    run_ok_test("test_ses04_solution_binary_search_count_0")
 
-def test_broken_factorial_1():
-    run_ok_test("test_ses03_solution_broken_factorial_1")
+def test_binary_search_count_1():
+    run_ok_test("test_ses04_solution_binary_search_count_1")
 
-def test_broken_factorial_2():
-    run_ok_test("test_ses03_solution_broken_factorial_2")
+def test_linear_search_index_0():
+    run_ok_test("test_ses04_solution_linear_search_index_0")
 
-def test_broken_factorial_3():
-    run_ok_test("test_ses03_solution_broken_factorial_3")
-
-def test_item_lengths_0():
-    run_ok_test("test_ses03_solution_item_lengths_0")
-
-def test_item_lengths_1():
-    run_ok_test("test_ses03_solution_item_lengths_1")
-
-def test_item_lengths_2():
-    run_ok_test("test_ses03_solution_item_lengths_2")
-
-def test_longest_item_0():
-    run_ok_test("test_ses03_solution_longest_item_0")
-
-def test_longest_item_1():
-    run_ok_test("test_ses03_solution_longest_item_1")
-
-def test_longest_item_2():
-    run_ok_test("test_ses03_solution_longest_item_2")
+def test_linear_search_index_1():
+    run_ok_test("test_ses04_solution_linear_search_index_1")

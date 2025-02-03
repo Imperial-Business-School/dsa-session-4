@@ -1,20 +1,20 @@
 test = {
-  'name': 'test_ses03_solution_item_lengths_1',
+  'name': 'test_ses04_solution_linear_search_index_1',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> item_lengths('All happy families are alike'.split())
-          [3, 5, 8, 3, 5]
+          >>> linear_search_index([1, 3, 9, 4, 5, 6], 2)
+          -1
           """,
           'hidden': False
         }
       ],
       'scored': True,
       'setup': r"""
-      >>> from ses03 import *
+      >>> from ses04 import *
       """,
       'teardown': '',
       'type': 'doctest'
