@@ -1,18 +1,19 @@
 test = {
-  'name': 'Recap',
+  'name': 'q1_recap',
   'points': 0,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> n = 3
-          >>> while n >= 1: # In case of infinite loop, type Infinite loop
-          ...     n = n - 1
-          ...     print(n)
-          904eef8e72d1fc3b59bf279bc0e834b2
-          d7b8f7bd8922caf9bcf430c46497c748
-          375261e19471b93a4b7bfff6c7b2238f
+          >>> def lsum(L):
+          ...     # L is a list with at least two items
+          ...     list_sum = L[0]
+          ...     for item in L[1:]:
+          ...         list_sum =  list_sum + item
+          ...     print(list_sum)
+          >>> lsum([1, 2, 3])
+          46b6541dbcee7a4cf1f90c9fd580d1bc
           # locked
           """,
           'hidden': False,
@@ -20,11 +21,8 @@ test = {
         },
         {
           'code': r"""
-          >>> n = 0.8
-          >>> while n <= 1: # In case of infinite loop, type Infinite loop
-          ...     n = n * n
-          ...     print(n)
-          72eae69a0db448e25437ef3c27f89b4c
+          >>> lsum(['a', 'b', 'c'])
+          0e04d81b0e64aeefffdcf4704db21e01
           # locked
           """,
           'hidden': False,
@@ -32,13 +30,10 @@ test = {
         },
         {
           'code': r"""
-          >>> def some_function(i):
-          ...     if type(i) == str:
-          ...         print('A string')
-          ...     else:
-          ...         print('Something else')
-          >>> some_function('Hello there!' + str(float('3.14')))
-          2e0d1ac5eb5e5f73a9a8a3e587fc9b8a
+          >>> x = lsum([2, 2, 1])
+          >>> print(x)
+          9d217a80e7225e06121e9b9f0b919379
+          6e316ac2d619b3f47fabed9be60b43c9
           # locked
           """,
           'hidden': False,
